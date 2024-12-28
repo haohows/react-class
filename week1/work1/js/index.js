@@ -1,6 +1,8 @@
+const { useState } = React;
+
 const App = () => {
-  const [tempProduct, setTempProduct] = React.useState(null);
-  const [products, setProducts] = React.useState(data);
+  const [tempProduct, setTempProduct] = useState(null);
+  const [products, setProducts] = useState(data);
   const selectProductImg = (img) => {
     let data = Object.assign({}, tempProduct, { imageUrl: img });
     setTempProduct(data);
