@@ -16,11 +16,9 @@ const App = () => {
             <div className="product-detail-section">
               <div className="product-detail-header">
                 <h2>商品詳情</h2>
-                {tempProduct ? (
-                  <button className="reset-button" onClick={() => setTempProduct(null)}>
-                    返回列表
-                  </button>
-                ) : null}
+                <button className="reset-button" onClick={() => setTempProduct(null)}>
+                  返回列表
+                </button>
               </div>
               <hr />
               <div>
